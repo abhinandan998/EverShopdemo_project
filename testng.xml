@@ -1,0 +1,15 @@
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+
+
+    <listeners>
+        <listener class-name="TestComponent.Listeners"/>
+    </listeners>
+
+    <test name="AllTests">
+        <classes>
+            <class name="PageObjectModel.E2E_Test"/>
+            <class name="PageObjectModel.ErrorValidationTest"/>
+        </classes>
+    </test>
+
+</suite>
