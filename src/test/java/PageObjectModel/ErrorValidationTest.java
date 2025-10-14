@@ -23,7 +23,7 @@ public class ErrorValidationTest extends BaseTest {
         By alert = By.xpath("//div[@class ='text-critical mb-4']");
         String message = driver.findElement(alert).getText().trim();
         System.out.println("alert message :" +message);
-        Assert.assertTrue(message.equalsIgnoreCase("Invalid email or passwordz"));
+        Assert.assertTrue(message.equalsIgnoreCase("Invalid email or password"));
     }
 
 }
