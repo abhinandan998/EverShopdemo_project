@@ -1,0 +1,44 @@
+[
+  {
+    "url" : "https://demo.evershop.io/account/login",
+    "email" : "abhinandan663.hitece2020@gmail.com",
+    "password": "Abhi@12345",
+    "category": "men",
+    "minSliderOffset": "40",
+    "size": "M",
+    "color": "Red",
+    "brand": "Nike",
+    "productName": "Nike air zoom pegasus 35",
+    "variantColor" : "Red",
+    "variantSize": "M",
+    "fullName": "Abhinandan Basu",
+    "phNumber": "9144243431",
+    "address": "Malancha Road",
+    "city": "Kharagpur",
+    "countryIndex": 3,
+    "provinceIndex": 36,
+    "postCode": "721304"
+
+
+  },
+  {
+    "url" : "https://demo.evershop.io/account/login",
+    "email" : "shrayashiabhinandan04072025@gmail.com",
+    "password": "Shrayashi@12345",
+    "category": "women",
+    "minSliderOffset": "40",
+    "size": "X",
+    "color": "Pink",
+    "brand": "Converse",
+    "productName": "Chuck taylor all star move",
+    "variantColor" : "Pink",
+    "variantSize": "X",
+    "fullName": "Shrayashi Ghosh",
+    "phNumber": "9144243431",
+    "address": "Madral Road",
+    "city": "Kolkata",
+    "countryIndex": 3,
+    "provinceIndex": 36,
+    "postCode": "743126"
+  }
+]

@@ -25,7 +25,7 @@ public class StandaloneTest {
 
         //login page
         driver.findElement(By.xpath("//input[@name='email']")).sendKeys("basuabhinandan99@gmail.com");
-        driver.findElement(By.xpath("//input[@name='password']")).sendKeys("Abhi@12345");
+        driver.findElement(By.xpath("c")).sendKeys("Abhi@12345");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
         //homepage
