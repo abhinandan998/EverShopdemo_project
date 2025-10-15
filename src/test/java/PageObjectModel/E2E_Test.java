@@ -7,17 +7,20 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import pageObject.CheckOutPage;
 import pageObject.HomePage;
 import pageObject.LoginPage;
 import pageObject.ProductPage;
 
+import java.io.IOException;
 import java.util.HashMap;
+import java.util.List;
 
 public class E2E_Test extends BaseTest {
 
-    @Test(dataProvider = "getUserData", dataProviderClass = dataReader.class)
+    @Test(dataProvider = "getData")
     public void everShopE2ETest(HashMap<String, Object> input) throws InterruptedException {
         LoginPage login = new LoginPage(driver);
         login.openLoginPage(input.get("url").toString());
@@ -57,6 +60,13 @@ public class E2E_Test extends BaseTest {
 
 
 
+    }
+    @DataProvider
+    public Object[][] getData() throws IOException {
+
+        List<HashMap<String,String>> data = getJsonToData(System.getProperty("user.dir")+"/src/test/java/data/testData.json");
+
+        return  new Object[][] {{data.get(0)}, {data.get(1)}};
     }
 
 

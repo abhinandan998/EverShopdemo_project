@@ -1,15 +1,21 @@
-<suite name="All Test Suite" parallel="classes" thread-count="2">
-
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="5">
     <listeners>
         <listener class-name="TestComponent.Listeners"/>
     </listeners>
-
-    <test name="AllTests">
+    <test verbose="2" preserve-order="true" name="C:/AutomationProjects/EverShopdemo_project">
         <classes>
-            <class name="PageObjectModel.E2E_Test"/>
-            <class name="PageObjectModel.ErrorValidationTest"/>
+            <class name="PageObjectModel.E2E_Test">
+                <methods>
+                    <include name="everShopE2ETest"/>
+                </methods>
+            </class>
+            <class name="PageObjectModel.ErrorValidationTest">
+                <methods>
+                    <include name="inValidLoginTest"/>
+                </methods>
+            </class>
         </classes>
     </test>
-
 </suite>
